@@ -10,7 +10,7 @@ describe('Gif App',()=>{
 
         const user = {
             username:"SebasGecko12", 
-            password:"12345"
+            password:"123456"
         }
 
         cy.request('POST', 'http://localhost:4003/db/users', user)
@@ -35,7 +35,7 @@ describe('Gif App',()=>{
        
         cy.contains('Login').click()
         cy.get('[placeholder="USERNAME"]').type('SebasGecko12')
-        cy.get('[placeholder="PASSWORD"]').type('12345')
+        cy.get('[placeholder="PASSWORD"]').type('123456')
         cy.get('#Test-Button-Login').click()
         setTimeout (()=>{
             cy.contains('Favs')
@@ -73,7 +73,7 @@ describe('When logged in ',()=>{
 
     it('a new gif can be added to favs and remove it ' , ()=>{
 
-        cy.login({username:'SebasGecko12', password:'12345'})
+        cy.login({username:'SebasGecko12', password:'123456'})
 
      
         cy.get('.testingheart:first').click() 

@@ -15,8 +15,12 @@ export default function registerService({ username, password }) {
   })
     .then((res) => {
     
-      if (!res.ok) throw new Error("Response is not ok");
-      else return true 
+      if (!res.ok)
+       {
+        console.log(res.status)
+        throw new Error(res.status )}
+      else
+     {  return true }
     })
     
 }

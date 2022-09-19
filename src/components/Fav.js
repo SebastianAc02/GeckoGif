@@ -17,7 +17,7 @@ export default  function  Fav({ id , title, url }) {
 
 
 
-const  isFaved =  favs.some(fav => {
+const  isFaved =  favs?.some(fav => {
 
  if(fav === id) return true 
  else{

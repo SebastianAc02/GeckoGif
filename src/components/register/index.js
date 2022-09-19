@@ -26,6 +26,7 @@ export default function Register() {
           if (values.password === '') {
             errors.password = "Required password";
           }
+       
 
           return errors;
         }}
@@ -41,15 +42,21 @@ export default function Register() {
           }).catch((err) => {
         
 
+
         if(values.username.length < 6)
             {
             setFieldError("username", "username is not vaild, lenth should be more than 6 characters ");
             }
-            if(values.username.length > 12){
-              setFieldError("username", "username is not vaild, lenth should be less than 12");
+
+            if(values.password.length < 6){
+              return setFieldError("password", "password should have more than 6 characters")
             }
+        
             if(err){
-              setFieldError(reportError)
+            
+              if(err == 'Error: 409')
+              
+              setFieldError('username','Username is already in use, please try with other username')
             }
           });
         }}
@@ -62,6 +69,7 @@ export default function Register() {
          
           <label className="LabelForms"> Password </label>
             <Field placeholder="PASSWORD" className="InputForm" name={"password"}></Field>
+
             <button className="buttonForm" disabled={isSubmitting}>
               Register
             </button>

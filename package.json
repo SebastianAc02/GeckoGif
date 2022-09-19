@@ -1,0 +1,63 @@
+{
+  "name": "giffy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/react": "13.3.0",
+    "@testing-library/user-event": "13.5.0",
+    "date-fns": "^2.28.0",
+    "formik": "2.2.9",
+    "giffy": "1.0.2",
+    "intersection-observer": "^0.12.2",
+    "just-debounce-it": "^3.0.1",
+    "just-throttle": "^4.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-head": "^3.4.0",
+    "react-helmet": "^6.1.0",
+    "react-scripts": "^5.0.1",
+    "vercel": "19.1.2",
+    "web-vitals": "2.1.4",
+    "wouter": "2.8.0-alpha.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cypress:open":"cypress open",
+    "test:e2e": "npx cypress run"
+  },
+  "eslintConfig": {
+    "env": {
+      "cypress/globals":true
+    },
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "plugins":[
+      "cypress"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "8.0.1",
+    "cypress": "10.8.0",
+    "eslint-plugin": "1.0.1",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-react": "7.30.1"
+  }
+}

@@ -1,0 +1,55 @@
+
+.Trending ul{
+    display: grid;
+
+    grid-gap: 10px 16px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-rows: masonry;
+   
+
+
+
+}
+
+.Trending li{
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+ 
+    margin: 5px;
+    padding: 10px;
+    
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    background-image: var(--bgImageTrending);
+    background-color: var(--bgTrending);
+
+}
+
+.Trending  ul li{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.trendingTitle{
+    margin: 50px 0 ;
+color:white;
+
+
+  
+    
+}
+
+.trendingTitle > span{
+    color: #8BC6EC;
+}
+
+
+
+
+

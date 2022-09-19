@@ -1,0 +1,77 @@
+
+
+
+
+.LoginPage{
+
+
+    
+    display: grid;
+    grid-gap:20vh 0;
+    place-items: center;
+
+  
+
+}
+
+.LoginPage form{
+
+    display: grid;
+    place-items: center;
+    grid-gap: 20px 0 ;
+
+}
+
+.LoginPage form > *{
+    display: grid;
+    gap: 20px 0;
+    padding: 5px 15px;
+    margin: 10px;
+
+}
+
+.LoginPage form input{
+    width: 30vw;
+    height: 3vh;
+
+
+}
+
+.LoginPage form button{
+    width:30vw ;
+}
+
+
+
+
+
+
+
+.form input::placeholder {
+    color: gray;
+    font-size: 0.9em;
+}
+
+
+           
+    .buttonForm {
+        background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+   
+        padding: 5px 50px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+      }
+
+      .form button:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+     
+    

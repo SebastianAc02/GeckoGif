@@ -1,0 +1,37 @@
+
+.fav-selector{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  }
+  
+  .fav-selector > div{
+    cursor: pointer;
+    flex: 1;
+   display: grid;
+   place-items: center;
+  }
+  
+  
+  .fav-selector > div > div {
+    width: 30vw;
+    height: 1vh;
+    background-color: transparent;
+  }
+  
+  
+  
+  .active-section:hover div {
+   background-color: whitesmoke;
+  
+  }
+
+.active-section.active{
+    color:white;
+ 
+}
+

@@ -1,0 +1,67 @@
+
+.RegisterPage{
+
+height: 100vh;
+display: flex;
+place-items: center;
+flex-direction: column;
+
+}
+
+.RegisterPage form{
+display: grid;
+width: 30vw;
+
+
+
+
+
+}
+
+.LabelForms{
+  color:white;
+
+  font-weight: 600;
+}
+
+.InputForm{
+ border: 2px solid #FC00FF;
+ font-weight: 300;
+ letter-spacing: 1px;
+
+}
+.RegisterPage form > input:placeholder{
+    color: grey;
+    text-transform: uppercase;
+}
+
+.RegisterPage form > *{
+    padding: 5px 15px;
+    margin: 10px;
+
+}
+
+.Errors{
+    color: red;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.Success{
+    color:#8EC5FC;
+    font-weight: 700;
+    letter-spacing: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

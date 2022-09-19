@@ -1,0 +1,37 @@
+
+
+.buttonSearch{
+           
+
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+
+    
+  
+    text-transform: uppercase;
+    transition: 0.5s;
+  
+    color: white;  
+          
+    
+  }
+
+
+
+.selectSearch{
+text-transform: uppercase;
+
+background-color:  #9733EE  ;
+color:white;
+
+
+
+
+}
+
+.form-search-general{
+margin: 5px;
+    padding: 10px 10px;
+    border: 2px solid var(--bgsearchform);
+
+}
+

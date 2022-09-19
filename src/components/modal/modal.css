@@ -1,0 +1,95 @@
+.Modal{
+    background-color: rgba(255,255,255 , .5);
+    backdrop-filter: blur(4px);
+    position:fixed;
+    display: grid;
+  justify-content: center;
+  align-items: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-contenido{
+background-color:rgba(0,0,0 );
+
+color:white;
+
+
+padding: 10px 20px;
+height: 80vh;
+
+
+display: flex;
+flex-direction: column;
+max-width: 240px;
+
+
+
+
+
+  
+
+}
+
+.modal-contenido .LoginTitle{
+  display: none;
+}
+
+.modal-contenido form{
+  display: block;
+}
+
+.modal-contenido  label > input  {
+width: 150px;
+
+
+
+}
+.modal-contenido button{
+  width: 60px;
+}
+
+.modal-contenido form button{
+  width: 200px;
+}
+
+@media only screen and (min-width: 1000px){
+  .modal-contenido{
+    margin: 7vw 40vw ;
+  }
+}
+
+
+
+
+
+.btn.i{
+        background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
+        margin-bottom: 10%;
+        padding: 0px 45px;
+        vertical-align:top;
+       text-align: center;
+        transition: 0.5s;
+        background-size: 100% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+     margin: 0;
+    
+        height: 30px;
+   
+       color:rgb(67, 0, 0);
+   
+
+      }
+
+      .btn:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      
+     
+    
+}
